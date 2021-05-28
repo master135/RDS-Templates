@@ -7,25 +7,26 @@
       "metadata": {
         "description": "The base URI where artifacts required by this template are located."
       },
-      "defaultValue": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/nestedtemplates/"
+      "defaultValue": "https://raw.githubusercontent.com/master135/RDS-Templates/master/ARM-wvd-templates/nestedtemplates/"
     },
     "artifactsLocation": {
       "type": "string",
       "metadata": {
         "description": "The base URI where artifacts required by this template are located."
       },
-      "defaultValue": "https://raw.githubusercontent.com/Azure/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
+      "defaultValue": "https://raw.githubusercontent.com/master135/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
     },
     "hostpoolName": {
       "type": "string",
       "metadata": {
         "description": "The name of the Hostpool to be created."
-      }
+      },
+      "defaultValue": "hp-qptm"
     },
     "hostpoolToken": {
       "type": "securestring",
       "metadata": {
-        "description": "The token of the host pool where the session hosts will be added."
+        "description": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg2Mjg0QjJDMkE5RTNFRTQxMzdFMTU3RTVFNzhCMzc4M0Y2QzA5NjEiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjdmYTQwNzVjLWEwZTItNDY5ZC1hMjhiLTEzMjYzYjI1MGE1YyIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11cy1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLXVzLXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNDIxYjJlNzMtMzMxYS00YTIzLWE3ZGUtMDk2MTJlZWVhZTE4IiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJVUyIsIm5iZiI6MTYyMjIwNDQ1OCwiZXhwIjoxNjI0NDgyMDAwLCJpc3MiOiJSREluZnJhVG9rZW5NYW5hZ2VyIiwiYXVkIjoiUkRtaSJ9.QjpL17XneH19q4P9qbUkms0qo399e1RaM7QL093aiGsXSCx6-QEvH1J-YNjxX5vdSXHb-m3aB3N_7V2nVOYsGGnyFQcrs1RUK-3-mgGyL74QRciBbYHomxhgnc_loF8IrM_f_L6JOhE2avXhgCxeP9UeAjd38q2XBiE2c4q5-MVOGMVTTJjQUH7G9zo1k-Sllk0BhzqrDBSMFNSBXREn7gkOAXYUiUaoBe4LBTUa0FSgXrG9O3RC6spErW8gUaIvjwhhIbppZh0RLAypUy8yMYsAszhx2M_IqnnTL1yujkoJVl3PftvSZQ0uzNpRwa4UAMDM4qX05b0rjsMC3RibsA"
       }
     },
     "hostpoolResourceGroup": {
@@ -33,14 +34,14 @@
       "metadata": {
         "description": "The resource group of the host pool to be updated. Used when the host pool was created empty."
       },
-      "defaultValue": ""
+      "defaultValue": "rg-wvd"
     },
     "hostpoolLocation": {
       "type": "string",
       "metadata": {
         "description": "The location of the host pool to be updated. Used when the host pool was created empty."
       },
-      "defaultValue": ""
+      "defaultValue": "southcentralus"
     },
     "hostpoolProperties": {
       "type": "object",
@@ -61,28 +62,28 @@
       "metadata": {
         "description": "A username in the domain that has privileges to join the session hosts to the domain. For example, 'vmjoiner@contoso.com'."
       },
-      "defaultValue": ""
+      "defaultValue": "qadmin2@qwvdpoc.com"
     },
     "administratorAccountPassword": {
       "type": "securestring",
       "metadata": {
         "description": "The password that corresponds to the existing domain username."
       },
-      "defaultValue": ""
+      "defaultValue": "Barracuda123!"
     },
     "vmAdministratorAccountUsername": {
       "type": "string",
       "metadata": {
         "description": "A username to be used as the virtual machine administrator account. The vmAdministratorAccountUsername and  vmAdministratorAccountPassword parameters must both be provided. Otherwise, domain administrator credentials provided by administratorAccountUsername and administratorAccountPassword will be used."
       },
-      "defaultValue": ""
+      "defaultValue": "qadmin"
     },
     "vmAdministratorAccountPassword": {
       "type": "securestring",
       "metadata": {
         "description": "The password associated with the virtual machine administrator account. The vmAdministratorAccountUsername and  vmAdministratorAccountPassword parameters must both be provided. Otherwise, domain administrator credentials provided by administratorAccountUsername and administratorAccountPassword will be used."
       },
-      "defaultValue": ""
+      "defaultValue": "Barracuda123!"
     },
     "availabilityOption": {
       "type": "string",
@@ -138,37 +139,43 @@
       "type": "string",
       "metadata": {
         "description": "The resource group of the session host VMs."
-      }
+      },
+      "defaultValue": "rg-wvd"
     },
     "vmLocation": {
       "type": "string",
       "metadata": {
         "description": "The location of the session host VMs."
-      }
+      },
+      "defaultValue": "southcentalus"
     },
     "vmSize": {
       "type": "string",
       "metadata": {
         "description": "The size of the session host VMs."
-      }
+      },
+      "defaultValue": "Standard_D2s_V3"
     },
     "vmInitialNumber": {
       "type": "int",
       "metadata": {
         "description": "VM name prefix initial number."
-      }
+      },
+      "defaultValue": 2
     },
     "vmNumberOfInstances": {
       "type": "int",
       "metadata": {
         "description": "Number of session hosts that will be created and added to the hostpool."
-      }
+      },
+      "defaultValue": 1
     },
     "vmNamePrefix": {
       "type": "string",
       "metadata": {
         "description": "This prefix will be used in combination with the VM number to create the VM name. If using 'rdsh' as the prefix, VMs would be named 'rdsh-0', 'rdsh-1', etc. You should use a unique prefix to reduce name collisions in Active Directory."
-      }
+      },
+      "defaultValue": "win16def"
     },
     "vmImageType": {
       "type": "string",
@@ -188,21 +195,21 @@
       "metadata": {
         "description": "(Required when vmImageType = Gallery) Gallery image Offer."
       },
-      "defaultValue": ""
+      "defaultValue": "WindowsServer"
     },
     "vmGalleryImagePublisher": {
       "type": "string",
       "metadata": {
         "description": "(Required when vmImageType = Gallery) Gallery image Publisher."
       },
-      "defaultValue": ""
+      "defaultValue": "MicrosoftWindowsServer"
     },
     "vmGalleryImageSKU": {
       "type": "string",
       "metadata": {
         "description": "(Required when vmImageType = Gallery) Gallery image SKU."
       },
-      "defaultValue": ""
+      "defaultValue": "2016-Datacenter-smalldisk"
     },
     "vmImageVhdUri": {
       "type": "string",
@@ -228,37 +235,40 @@
       ],
       "metadata": {
         "description": "The VM disk type for the VM: HDD or SSD."
-      }
+      },
+      "defaultValue": "StandardSSD_LRS"
     },
     "vmUseManagedDisks": {
       "type": "bool",
       "metadata": {
         "description": "True indicating you would like to use managed disks or false indicating you would like to use unmanaged disks."
-      }
+      },
+      "defaultValue": true
     },
     "storageAccountResourceGroupName": {
       "type": "string",
       "metadata": {
         "description": "(Required when vmUseManagedDisks = False) The resource group containing the storage account of the image vhd file."
       },
-      "defaultValue": ""
+      "defaultValue": "rg-wvd"
     },
     "existingVnetName": {
       "type": "string",
       "metadata": {
         "description": "The name of the virtual network the VMs will be connected to."
-      }
+      },
+      "defaultValue":"vnet-RDS"
     },
     "existingSubnetName": {
       "type": "string",
       "metadata": {
-        "description": "The subnet the VMs will be placed in."
+        "description": "RDS"
       }
     },
     "virtualNetworkResourceGroupName": {
       "type": "string",
       "metadata": {
-        "description": "The resource group containing the existing virtual network."
+        "description": "rg-wvd"
       }
     },
     "createNetworkSecurityGroup": {
@@ -273,7 +283,7 @@
       "metadata": {
         "description": "The resource id of an existing network security group"
       },
-      "defaultValue": ""
+      "defaultValue": "/subscriptions/522dad8c-ebbd-46c3-8eb2-29ea6cad5490/resourceGroups/rg-WVD/providers/Microsoft.Network/networkSecurityGroups/NSG-WVD"
     },
     "networkSecurityGroupRules": {
       "type": "array",
@@ -322,7 +332,7 @@
       "metadata": {
         "description": "GUID for the deployment"
       },
-      "defaultValue": ""
+      "defaultValue": "24abf014-a5c8-4828-a978-de2ea2f86f4e"
     },
     "apiVersion": {
       "type": "string",
@@ -343,7 +353,7 @@
       "metadata": {
         "description": "Domain to join"
       },
-      "defaultValue": ""
+      "defaultValue": "qwvdpoc.com"
     },
     "aadJoin": {
       "type": "bool",
