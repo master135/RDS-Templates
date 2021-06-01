@@ -41,7 +41,7 @@
       "metadata": {
         "description": "The location of the host pool to be updated. Used when the host pool was created empty."
       },
-      "defaultValue": "southcentralus"
+      "defaultValue": "South Central US"
     },
     "hostpoolProperties": {
       "type": "object",
@@ -147,7 +147,7 @@
       "metadata": {
         "description": "The location of the session host VMs."
       },
-      "defaultValue": "southcentalus"
+      "defaultValue": "South Central US"
     },
     "vmSize": {
       "type": "string",
@@ -161,7 +161,7 @@
       "metadata": {
         "description": "VM name prefix initial number."
       },
-      "defaultValue": 2
+      "defaultValue": 4
     },
     "vmNumberOfInstances": {
       "type": "int",
@@ -182,7 +182,7 @@
       "metadata": {
         "description": "Select the image source for the session host vms. VMs from a Gallery image will be created with Managed Disks."
       },
-      "defaultValue": "Gallery",
+      "defaultValue": "CustomImage",
       "allowedValues": [
         "CustomVHD",
         "CustomImage",
@@ -223,7 +223,7 @@
       "metadata": {
         "description": "(Required when vmImageType = CustomImage) Resource ID of the image"
       },
-      "defaultValue": ""
+      "defaultValue": "/subscriptions/522dad8c-ebbd-46c3-8eb2-29ea6cad5490/resourceGroups/rg-imagebuilder/providers/Microsoft.Compute/galleries/shigallery/images/win16/versions/0.24700.21315"
     },
     "vmDiskType": {
       "type": "string",
@@ -263,7 +263,8 @@
       "type": "string",
       "metadata": {
         "description": "RDS"
-      }
+      },
+      "defaultValue":"RDS"
     },
     "virtualNetworkResourceGroupName": {
       "type": "string",
@@ -332,7 +333,7 @@
       "metadata": {
         "description": "GUID for the deployment"
       },
-      "defaultValue": "24abf014-a5c8-4828-a978-de2ea2f86f4e"
+      "defaultValue": "24abf014-a5c8-4828-a978-de2ea2f86f41"
     },
     "apiVersion": {
       "type": "string",
