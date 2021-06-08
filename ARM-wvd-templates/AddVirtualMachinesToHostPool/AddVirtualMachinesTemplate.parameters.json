@@ -3,22 +3,22 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "nestedTemplatesLocation": {
-            "value": "https://raw.githubusercontent.com/master135/RDS-Templates/master/ARM-wvd-templates/nestedtemplates/"
+            "value": ""
         },
         "artifactsLocation": {
-            "value": "https://raw.githubusercontent.com/master135/RDS-Templates/master/ARM-wvd-templates/DSC/Configuration.zip"
+            "value": ""
         },
         "hostpoolName": {
             "value": "hp-qptm"
         },
         "hostpoolToken": {
-            "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg2Mjg0QjJDMkE5RTNFRTQxMzdFMTU3RTVFNzhCMzc4M0Y2QzA5NjEiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjdmYTQwNzVjLWEwZTItNDY5ZC1hMjhiLTEzMjYzYjI1MGE1YyIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11cy1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLXVzLXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNDIxYjJlNzMtMzMxYS00YTIzLWE3ZGUtMDk2MTJlZWVhZTE4IiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJVUyIsIm5iZiI6MTYyMjIwNDQ1OCwiZXhwIjoxNjI0NDgyMDAwLCJpc3MiOiJSREluZnJhVG9rZW5NYW5hZ2VyIiwiYXVkIjoiUkRtaSJ9.QjpL17XneH19q4P9qbUkms0qo399e1RaM7QL093aiGsXSCx6-QEvH1J-YNjxX5vdSXHb-m3aB3N_7V2nVOYsGGnyFQcrs1RUK-3-mgGyL74QRciBbYHomxhgnc_loF8IrM_f_L6JOhE2avXhgCxeP9UeAjd38q2XBiE2c4q5-MVOGMVTTJjQUH7G9zo1k-Sllk0BhzqrDBSMFNSBXREn7gkOAXYUiUaoBe4LBTUa0FSgXrG9O3RC6spErW8gUaIvjwhhIbppZh0RLAypUy8yMYsAszhx2M_IqnnTL1yujkoJVl3PftvSZQ0uzNpRwa4UAMDM4qX05b0rjsMC3RibsA"
+            "value": ""
         },
         "hostpoolResourceGroup": {
-            "value": "rg-wvd"
+            "value": ""
         },
         "hostpoolLocation": {
-            "value": "South Central US"
+            "value": ""
         },
         "hostpoolProperties": {
             "value": {}
@@ -27,19 +27,19 @@
             "value": ""
         },
         "administratorAccountUsername": {
-            "value": "qadmin2@qwvdpoc.com"
+            "value": ""
         },
         "administratorAccountPassword": {
-            "value": "Barracuda123!"
+            "value": ""
         },
         "vmAdministratorAccountUsername": {
-            "value": "qadmin"
+            "value": ""
         },
         "vmAdministratorAccountPassword": {
-            "value": "Barracuda123!"
+            "value": ""
         },
         "availabilityOption": {
-            "value": "None"
+            "value": "
         },
         "availabilitySetName": {
             "value": ""
@@ -57,13 +57,13 @@
             "value": 1
         },
         "vmResourceGroup": {
-            "value": "rg-wvd"
+            "value": ""
         },
         "vmLocation": {
-            "value": "South Central US"
+            "value": ""
         },
         "vmSize": {
-            "value": "Standard_D2s_V3"
+            "value": ""
         },
         "vmInitialNumber": {
             "value": 4
@@ -72,49 +72,49 @@
             "value": 1
         },
         "vmNamePrefix": {
-            "value": "win16def"
+            "value": ""
         },
         "vmImageType": {
-            "value": "CustomImage"
+            "value": ""
         },
         "vmGalleryImageOffer": {
-            "value": "WindowsServer"
+            "value": ""
         },
         "vmGalleryImagePublisher": {
-            "value": "MicrosoftWindowsServer"
+            "value": ""
         },
         "vmGalleryImageSKU": {
-            "value": "2016-Datacenter-smalldisk"
+            "value": ""
         },
         "vmImageVhdUri": {
             "value": ""
         },
         "vmCustomImageSourceId": {
-            "value": "/subscriptions/522dad8c-ebbd-46c3-8eb2-29ea6cad5490/resourceGroups/rg-imagebuilder/providers/Microsoft.Compute/galleries/shigallery/images/win16/versions/0.24700.21315"
+            "value": ""
         },
         "vmDiskType": {
-            "value": "StandardSSD_LRS"
+            "value": ""
         },
         "vmUseManagedDisks": {
             "value": true
         },
         "storageAccountResourceGroupName": {
-            "value": "rg-wvd"
+            "value": ""
         },
         "existingVnetName": {
-            "value": "vnet-RDS"
+            "value": ""
         },
         "existingSubnetName": {
-            "value": "RDS"
+            "value": ""
         },
         "virtualNetworkResourceGroupName": {
-            "value": "rg-WVD"
+            "value": ""
         },
         "createNetworkSecurityGroup": {
             "value": false
         },
         "networkSecurityGroupId": {
-            "value": "/subscriptions/522dad8c-ebbd-46c3-8eb2-29ea6cad5490/resourceGroups/rg-WVD/providers/Microsoft.Network/networkSecurityGroups/NSG-WVD"
+            "value": ""
         },
         "networkSecurityGroupRules": {
             "value": []
@@ -135,7 +135,7 @@
             "value": {}
         },
         "deploymentId": {
-            "value": "24abf014-a5c8-4828-a978-de2ea2f86f4e"
+            "value": ""
         },
         "apiVersion": {
             "value": "2019-12-10-preview"
@@ -144,7 +144,7 @@
             "value": ""
         },
         "domain": {
-            "value": "qwvdpoc.com"
+            "value": ""
         },
         "aadJoin": {
             "value": false
