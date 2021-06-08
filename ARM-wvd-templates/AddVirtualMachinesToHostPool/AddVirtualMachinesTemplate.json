@@ -26,7 +26,8 @@
     "hostpoolToken": {
       "type": "securestring",
       "metadata": {
-        "description": ""
+        "description": "Host Pool registration token"
+      }
     },
     "hostpoolResourceGroup": {
       "type": "string",
