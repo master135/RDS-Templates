@@ -26,8 +26,7 @@
     "hostpoolToken": {
       "type": "securestring",
       "metadata": {
-        "description": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg2Mjg0QjJDMkE5RTNFRTQxMzdFMTU3RTVFNzhCMzc4M0Y2QzA5NjEiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjdmYTQwNzVjLWEwZTItNDY5ZC1hMjhiLTEzMjYzYjI1MGE1YyIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11cy1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLXVzLXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNDIxYjJlNzMtMzMxYS00YTIzLWE3ZGUtMDk2MTJlZWVhZTE4IiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJVUyIsIm5iZiI6MTYyMjIwNDQ1OCwiZXhwIjoxNjI0NDgyMDAwLCJpc3MiOiJSREluZnJhVG9rZW5NYW5hZ2VyIiwiYXVkIjoiUkRtaSJ9.QjpL17XneH19q4P9qbUkms0qo399e1RaM7QL093aiGsXSCx6-QEvH1J-YNjxX5vdSXHb-m3aB3N_7V2nVOYsGGnyFQcrs1RUK-3-mgGyL74QRciBbYHomxhgnc_loF8IrM_f_L6JOhE2avXhgCxeP9UeAjd38q2XBiE2c4q5-MVOGMVTTJjQUH7G9zo1k-Sllk0BhzqrDBSMFNSBXREn7gkOAXYUiUaoBe4LBTUa0FSgXrG9O3RC6spErW8gUaIvjwhhIbppZh0RLAypUy8yMYsAszhx2M_IqnnTL1yujkoJVl3PftvSZQ0uzNpRwa4UAMDM4qX05b0rjsMC3RibsA"
-      }
+        "description": ""
     },
     "hostpoolResourceGroup": {
       "type": "string",
